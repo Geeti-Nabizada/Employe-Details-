@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  fieldset{
+    border: 2px solid #007BFF;
+    border-radius: 8px;
+  }
+  legend{
+    font-weight: bold;
+    font-size: 1.2em;
+  
+  }
+  .form-grid {
+    display: flex;
+    gap: 40px;
+    margin-top: 20px;
+  }
+  .field {
+    margin-bottom: 15px;
+    border: 2px solid #007BFF;
+    border-radius: 8px;
+    padding: 20px;
+  }
+  .field span {
+    display: inline-block;
+    width: 150px;
+    font-weight: bold;
+  }
+  input, select {
+    padding: 5px;
+  }
+  .buttons {
+    margin-top: 20px;
+  }
+  button {
+    padding: 8px 16px;
+    margin-right: 10px;
+    background-color: darkblue;
+    color: white;
+    border-radius: 20px;
+  }
+  @media (max-width: 768px) {
+    .form-grid {
+      flex-direction: column;
+    }
+}
