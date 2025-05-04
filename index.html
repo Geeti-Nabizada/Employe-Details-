@@ -1,63 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Employee Details</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form action="">
- 
-<fieldset>
- <legend style="background-color: darkblue; color: white; border-radius: 20%; border-style:groove;">Form</legend>
+  <div class="container">
+    <h1>Employee Details</h1>
 
- <div class="form-grid">
-<div class="left">
+    <form id="employeeForm">
+      <input type="text" id="name" placeholder="Name" required>
+      <input type="number" id="age" placeholder="Age" required>
+      <input type="text" id="position" placeholder="Position" required>
+      <button type="submit">Add Employee</button>
+    </form>
 
-    <div class="field">
-        <span>firstname :</span>
-        <input type="text"placeholder="Firstname">
-    </div>
-    
-        <div class="field">
-            <span>Lastname :</span>
-            <input type="text"placeholder="Lastname">
-        </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Position</th>
+        </tr>
+      </thead>
+      <tbody id="employeeTable">
+        <!-- Dynamic rows go here -->
+      </tbody>
+    </table>
+  </div>
 
-        <div class="field">
-            <span>Gender:</span>
-            <input type="radio" name="gender"> Male
-            <input type="radio" name="gender"> Female
-          </div>
-
-          <div class="field">
-            <span>Employee ID:</span>
-            <input type="number"placeholder="123...">
-        </div>
-        
-        <div class="field">
-            <span>Designation:</span>
-            <input type="number"placeholder="">
-        </div>
-    
-        <div class="field">
-            <span>Phone Number:</span>
-            <input type="tel" placeholder="(+93 )...">
-          </div>
-
-          <div class="buttons">
-            <button type="button">Cancel</button>
-            <button type="submit">Submit</button>
-          </div>
-
- </div>
- </div>
-
-
-
-
-</fieldset>
-</form>
+  <script src="script.js"></script>
 </body>
 </html>
